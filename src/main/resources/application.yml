@@ -1,0 +1,28 @@
+# In application.yml
+spring:
+  ai:
+    deepseek:
+      api-key: sk-eb32f32e1a14404ab1128c89814f9b8d
+    ollama:
+      chat:
+        model: deepseek-r1:8b
+      embedding:
+        enabled: false
+    dashscope:
+      api-key: sk-f982e68df0dc49088676c62e5b636bc8
+      embedding:
+        enabled: true
+        options:
+          model: text-embedding-v4
+
+    vectorstore:
+      qdrant:
+        host: localhost
+        port: 6334
+
+        collection-name: vector_store
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_ai_use?allowPublicKeyRetrieval=true&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: liao951126
