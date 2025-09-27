@@ -2,14 +2,14 @@
 spring:
   ai:
     deepseek:
-      api-key: sk-eb32f32e1a14404ab1128c89814f9b8d
+      api-key: ***
     ollama:
       chat:
         model: deepseek-r1:8b
       embedding:
         enabled: false
     dashscope:
-      api-key: sk-c6b52ede59be4176a50cbff702e9d3cf
+      api-key: ***
       embedding:
         enabled: true
         options:

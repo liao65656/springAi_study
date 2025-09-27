@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Custom Ignore Rules ###
+# 忽略resources目录下的PDF文件
+src/main/resources/*.pdf
